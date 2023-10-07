@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: "Roboto", sans-serif;
+
+        }
+
+        .main {
+            height: max-content;
+            width: 100%;
+            background-color: rgb(241, 241, 241);
+        }
+
+        .section1 {
+            height: max-content;
+            width: 30%;
+            margin-left: 15px;
+            margin-top: 15px;
+            background-color: white;
+            padding-bottom: 20px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .section2 {
+            height: max-content;
+            width: 65%;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 20px;
+
+        }
+
+        .image {
+            height: 270px;
+            width: 100%;
+            background-image: url(./image/avatar_hat.jpg);
+            background-position: center;
+            background-size: cover;
+            border: 1px solid transparent;
+        }
+
+        .text {
+            font-weight: lighter;
+            margin-left: 20px;
+            margin-top: 220px;
+        }
+
+        .box {
+            height: max-content;
+            width: 95%;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        .icon {
+            height: 30px;
+            width: 11%;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .para {
+            height: 30px;
+            width: 85%;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .one {
+            margin-left: 5px;
+            margin-top: 5px;
+        }
+
+        .two {
+            margin-top: 5px;
+            color: rgba(0, 0, 0, 0.661);
+        }
+
+        .borderbottom {
+            width: 95%;
+            margin-left: 2.5%;
+            margin-top: 10px;
+            border: 1px solid rgba(128, 128, 128, 0.174);
+        }
+
+        .three {
+            margin-top: 5px;
+            font-weight: bold;
+            color: rgba(0, 0, 0, 0.53);
+            font-size: 110%;
+        }
+
+        .ten {
+            height: 30px;
+            width: 80%;
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        .four {
+            color: rgba(0, 0, 0, 0.661)
+        }
+
+        .ten1 {
+            height: 20px;
+            width: 95%;
+            margin-left: 2.5%;
+            border-radius: 20px;
+            margin-top: 10px;
+            background-color: rgb(241, 241, 241);
+            position: relative;
+        }
+
+        .ten2 {
+            height: 100%;
+            width: 90%;
+            position: absolute;
+            background-color: rgb(0, 150, 136);
+            border-radius: 20px;
+        }
+
+        .five {
+            color: white;
+            font-size: 80%;
+            text-align: center;
+            margin-top: 2px;
+        }
+
+        .T1 {
+            width: 80%;
+        }
+
+        .T2 {
+            width: 75%;
+        }
+
+        .T3 {
+            width: 50%;
+        }
+
+        .F1 {
+            height: 25px;
+        }
+
+        .T4 {
+            width: 100%;
+        }
+
+        .T5 {
+            width: 60%;
+        }
+
+        .T6 {
+            width: 25%;
+        }
+
+        .child1 {
+            height: max-content;
+            width: 100%;
+            background-color: white;
+            padding-bottom: 20px;
+
+        }
+
+        .ten3 {
+            height: max-content;
+            width: 95%;
+            margin: 10px 10px;
+        }
+
+        .ten4 {
+            height: 60px;
+            width: 10%;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .ten5 {
+            height: 60px;
+            width: 80%;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 15px;
+        }
+
+        .five1 {
+            font-size: 40px;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        .ten6 {
+            font-weight: lighter;
+            color: rgba(0, 0, 0, 0.53);
+            margin-top: 10px;
+            font-size: 30px;
+
+        }
+
+        .ten7 {
+            height: 20px;
+            width: max-content;
+            margin-top: 20px;
+            margin-left: 20px;
+            color: rgba(0, 0, 0, 0.587);
+        }
+
+        .ten8 {
+            height: max-content;
+            width: 97%;
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+
+        .ten9 {
+            height: 30px;
+            width: 3%;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .ten10 {
+            height: 30px;
+            width: 70%;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .ten11 {
+            height: 25px;
+            width: 20%;
+            background-color: rgb(0, 150, 136);
+            margin-left: 80px;
+            margin-top: -20px;
+            border-radius: 5px;
+            color: white;
+            padding: 1px;
+        }
+
+        .ten12 {
+            color: rgb(0, 150, 136)
+        }
+
+        .ten13 {
+            text-align: center;
+            margin-top: 2px;
+        }
+
+        .ten14 {
+            margin-top: 20px;
+            margin-left: 20px;
+            line-height: 25px;
+            font-size: 95%;
+
+        }
+
+        .child2 {
+            height: max-content;
+            width: 100%;
+            background-color: white;
+            margin-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .section3 {
+            height: 150px;
+            width: 100%;
+            background-color: rgb(0, 150, 136);
+            margin-top: 20px;
+            padding: 1px;
+        }
+
+        .six1 {
+            height: max-content;
+            width: max-content;
+            margin: auto;
+            margin-top: 15px;
+            color: white;
+        }
+
+        .six2 {
+            height: max-content;
+            width: max-content;
+            margin: auto;
+            margin-top: 20px;
+        }
+
+        .six3 {
+            height: 20px;
+            width: max-content;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .six4 {
+            height: max-content;
+            width: max-content;
+            margin: auto;
+            margin-top: 20px;
+            color: white;
+        }
+
+        .six5 {
+            color: white;
+        }
+
+        /* ///////// ------ Media Queries ------- //////// */
+        @media screen and (max-width:800px) {
+            .section1 {
+                width: 30%;
+            }
+
+            .section2 {
+                width: 63%;
+            }
+        }
+
+        @media screen and (max-width:600px) {
+            .section1 {
+                width: 95%;
+            }
+
+            .section2 {
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="section1">
+            <div class="image">
+                <h1 class="text">Jane Doe</h1>
+            </div>
+            <div class="box">
+                <div class="icon">
+                    <i class="fa-solid fa-briefcase one" style="color: rgb(0,150,136);"></i>
+                </div>
+                <div class="para">
+                    <p class="two">Designer</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icon">
+                    <i class="fa-solid fa-house one" style="color: rgb(0,150,136);"></i>
+                </div>
+                <div class="para">
+                    <p class="two">London, UK</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icon">
+                    <i class="fa-solid fa-envelope one" style="color:rgb(0,150,136);"></i>
+                </div>
+                <div class="para">
+                    <p class="two">ex@mail.com</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icon">
+                    <i class="fa-solid fa-phone one" style="color:rgb(0,150,136);"></i>
+                </div>
+                <div class="para">
+                    <p class="two">1224435534</p>
+                </div>
+            </div>
+            <div class="borderbottom"></div>
+            <div class="box">
+                <div class="icon">
+                    <i class="fa-solid fa-star-of-life one" style="color:rgb(0,150,136);"></i>
+                </div>
+                <div class="para">
+                    <p class="three">Skills</p>
+                </div>
+            </div>
+            <div class="ten">
+                <p class="four">Adobe Photoshop</p>
+            </div>
+            <div class="ten1">
+                <div class="ten2">
+                    <p class="five">90%</p>
+                </div>
+            </div>
+            <div class="ten">
+                <p class="four">Photography</p>
+            </div>
+            <div class="ten1">
+                <div class="ten2 T1">
+                    <p class="five">80%</p>
+                </div>
+            </div>
+            <div class="ten">
+                <p class="four">Illustrator</p>
+            </div>
+            <div class="ten1">
+                <div class="ten2 T2">
+                    <p class="five">75%</p>
+                </div>
+            </div>
+            <div class="ten">
+                <p class="four">Media</p>
+            </div>
+            <div class="ten1">
+                <div class="ten2 T3">
+                    <p class="five">50%</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icon">
+                    <i class="fa-solid fa-earth-americas one" style="color: rgb(0,150,136);"></i>
+                </div>
+                <div class="para">
+                    <p class="three">Languages</p>
+                </div>
+            </div>
+            <div class="ten">
+                <p class="four">English</p>
+            </div>
+            <div class="ten1 F1">
+                <div class="ten2 T4"></div>
+            </div>
+            <div class="ten">
+                <p class="four">Spanish</p>
+            </div>
+            <div class="ten1 F1">
+                <div class="ten2 T5"></div>
+            </div>
+            <div class="ten">
+                <p class="four">German</p>
+            </div>
+            <div class="ten1 F1">
+                <div class="ten2 T6"></div>
+            </div>
+
+        </div>
+        <div class="section2">
+            <div class="child1">
+                <div class="ten3">
+                    <div class="ten4">
+                        <i class="fa-solid fa-briefcase five1" style="color: rgb(0,150,136);"></i>
+                    </div>
+                    <div class="ten5">
+                        <h1 class="ten6">Work Experience</h1>
+                    </div>
+                    <div class="ten7">
+                        <h3>Front End Developer / w3schools.com</h3>
+                    </div>
+                    <div class="ten8">
+                        <div class="ten9">
+                            <i class="fa-solid fa-calendar-days" style="color: rgb(0,150,136);"></i>
+                        </div>
+                        <div class="ten10">
+                            <p class="ten12">Jan 2015 - </p>
+                            <div class="ten11">
+                                <p class="ten13">Current</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="ten14">Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt
+                        aspernatur est reprehenderit sunt <br> hic. Nulla tempora soluta ea et odio, unde doloremque
+                        repellendus iure, iste.</p>
+                    <div class="borderbottom"></div>
+                    <div class="ten7">
+                        <h3>Web Developer / something.com</h3>
+                    </div>
+                    <div class="ten8">
+                        <div class="ten9">
+                            <i class="fa-solid fa-calendar-days" style="color: rgb(0,150,136);"></i>
+                        </div>
+                        <div class="ten10">
+                            <p class="ten12">Mar 2012 - Dec 2014 </p>
+                        </div>
+                    </div>
+                    <p class="ten14">Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt
+                        aspernatur est reprehenderit sunt <br> hic. Nulla tempora soluta ea et odio, unde doloremque
+                        repellendus iure, iste.</p>
+                    <div class="borderbottom"></div>
+                    <div class="ten7">
+                        <h3>Graphic Designer / designsomething.com</h3>
+                    </div>
+                    <div class="ten8">
+                        <div class="ten9">
+                            <i class="fa-solid fa-calendar-days" style="color: rgb(0,150,136);"></i>
+                        </div>
+                        <div class="ten10">
+                            <p class="ten12">Jun 2010 - Mar 2012</p>
+                        </div>
+                    </div>
+                    <p class="ten14">Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt
+                        aspernatur est reprehenderit sunt <br> hic. Nulla tempora soluta ea et odio, unde doloremque
+                        repellendus iure, iste.</p>
+                </div>
+
+
+            </div>
+            <div class="child2">
+                <div class="ten3">
+                    <div class="ten4">
+                        <i class="fa-solid fa-circle five1" style="color: rgb(0,150,136)"></i>
+                    </div>
+                    <div class="ten5">
+                        <h1 class="ten6">Education</h1>
+                    </div>
+                </div>
+                <div class="ten7">
+                    <h3>W3Schools.com</h3>
+                </div>
+                <div class="ten8">
+                    <div class="ten9">
+                        <i class="fa-solid fa-calendar-days" style="color: rgb(0,150,136);"></i>
+                    </div>
+                    <div class="ten10">
+                        <p class="ten12">Forever</p>
+                    </div>
+                </div>
+                <p class="ten14">Web Development! All I need to know in one place</p>
+                <div class="borderbottom"></div>
+                <div class="ten7">
+                    <h3>London Business School</h3>
+                </div>
+                <div class="ten8">
+                    <div class="ten9">
+                        <i class="fa-solid fa-calendar-days" style="color: rgb(0,150,136);"></i>
+                    </div>
+                    <div class="ten10">
+                        <p class="ten12">2013 - 2015</p>
+                    </div>
+                </div>
+                <p class="ten14">Master Degree</p>
+                <div class="borderbottom"></div>
+                <div class="ten7">
+                    <h3>School of Coding</h3>
+                </div>
+                <div class="ten8">
+                    <div class="ten9">
+                        <i class="fa-solid fa-calendar-days" style="color: rgb(0,150,136);"></i>
+                    </div>
+                    <div class="ten10">
+                        <p class="ten12">2010 - 2013</p>
+                    </div>
+                </div>
+                <p class="ten14">Bachelor Degree</p>
+
+            </div>
+        </div>
+        <div class="section3">
+            <div class="six1">
+                <p>Find me on social media.</p>
+            </div>
+            <div class="six2">
+                <div class="six3">
+                    <i class="fa-brands fa-square-facebook" style="color: #ffffff;"></i>
+                </div>
+                <div class="six3">
+                    <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+                </div>
+                <div class="six3">
+                    <i class="fa-brands fa-square-snapchat" style="color: #ffffff;"></i>
+                </div>
+                <div class="six3">
+                    <i class="fa-brands fa-pinterest-p" style="color: #ffffff;"></i>
+                </div>
+                <div class="six3">
+                    <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+                </div>
+                <div class="six3">
+                    <i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i>
+                </div>
+            </div>
+            <div class="six4">
+                <p>Powered by <a class="six5" href=""> w3.css</a></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
